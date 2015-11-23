@@ -1,0 +1,48 @@
+html, body, textarea {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #FFE800;
+  display: table;
+}
+h1, h2 {
+  width: 100%;
+  text-align: center;
+  width: calc(100% - 80px);
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin: 0 40px;
+}
+h1 {
+  margin-top: 30px;
+  color: #000000;
+}
+h2 {
+  font-size: 20px;
+  font-family: "Arial", Gadget, sans-serif;
+  margin-top: 10px;
+  color: #555236;
+}
+textarea {
+  width: calc(100% - 80px);
+  margin: 0 40px;
+  display: table-cell;
+  height: calc(100% - 200px);
+  position: absolute;
+  bottom: 40px;
+  border: 2px solid black;
+  resize: none;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  outline: none;
+}
+.saved {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
