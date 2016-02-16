@@ -24,6 +24,9 @@ $(document).ready(function() {
     svg = svg.replace(/<\!--[^]*-->/, "");
     // remove empty lines
     svg = svg.replace(/^\s*[\r\n]/gm, "");
+    // replace double spaces with a single space
+    svg = svg.replace(/  +/g, ' ');
+    
     var newLength = svg.length;
     var charsRemoved = prevLength - newLength;
     $("#saved").text(charsRemoved);
