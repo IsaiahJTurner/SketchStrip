@@ -24,8 +24,11 @@ $(document).ready(function() {
     svg = svg.replace(/<\!--[^]*-->/, "");
     // remove empty lines
     svg = svg.replace(/^\s*[\r\n]/gm, "");
-    // replace double spaces with a single space
-    svg = svg.replace(/  +/g, ' ');
+    // replace double spaces between attributes with a single space
+    // TODO: this line seemes to remove indents
+    // svg = svg.replace(/< +/g, ' ');
+    // remove spaces before closing >
+    svg = svg.replace(/ >+/g, ' ');
     
     var newLength = svg.length;
     var charsRemoved = prevLength - newLength;
