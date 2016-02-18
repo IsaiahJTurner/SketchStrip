@@ -27,8 +27,8 @@ $(document).ready(function() {
     // replace double spaces between attributes with a single space
     // TODO: this line seemes to remove indents
     // svg = svg.replace(/< +/g, ' ');
-    // remove spaces before closing >
-    svg = svg.replace(/ >+/g, ' ');
+    // remove extra space before closing >
+    svg = svg.replace(/ >+/g, '>');
     
     var newLength = svg.length;
     var charsRemoved = prevLength - newLength;
